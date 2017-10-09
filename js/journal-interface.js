@@ -10,7 +10,6 @@ $(document).ready(function() {
     var vowelCountOutput = newEntry.vowelCount(body);
     var consonantCountOutput = newEntry.consonantCount(body);
     var firstSentence = newEntry.getTeaser(body);
-    console.log('firstSentence');
     $('#journal-entry').append(body);
     $('#word-count').append('<li>' + wordCountOutput + '</li>');
     $('#vowel-count').append('<li>' + vowelCountOutput + '</li>');

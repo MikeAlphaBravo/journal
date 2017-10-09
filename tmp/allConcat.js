@@ -10,11 +10,15 @@ $(document).ready(function() {
     var vowelCountOutput = newEntry.vowelCount(body);
     var consonantCountOutput = newEntry.consonantCount(body);
     var firstSentence = newEntry.getTeaser(body);
-    console.log('firstSentence');
     $('#journal-entry').append(body);
     $('#word-count').append('<li>' + wordCountOutput + '</li>');
     $('#vowel-count').append('<li>' + vowelCountOutput + '</li>');
     $('#consonant-count').append('<li>' + consonantCountOutput + '</li>');
     $('#first-sentence').append('<p>' + firstSentence + '</p>');
   });
+});
+
+$(document).ready(function(){
+  console.log("hello");
+  $('#time').text(moment());
 });
