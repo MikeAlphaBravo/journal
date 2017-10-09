@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script src="bower_components/jquery/dist/jquery.min.js"></script>
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="build/js/app.js"></script>
+    <title>Journal</title>
+  </head>
+  <body>
+    <div class="container">
+      <form id="journal-form">
+        <div class="form-group">
+          <label for="title">Title of Journal Entry</label>
+          <input type="text" id="title">
+          <label for="body">Type your journal entry here:</label>
+          <input type="text" id="body">
+        </div>
+        <button class="btn-success" type="submit">Submit</button>
+      </form>
+    </div>
+    <br>
+    First sentence of entry.<p id="first-sentence"></p>
+    <ul>
+      Number of words in the entry.<li id="word-count"></li>
+      Number of vowels in the entry.<li id="vowel-count"></li>
+      Number of consonants in the entry.<li id="consonant-count"></li>
+    </ul>
+    <h5>Journal Entry:</h5>
+      <p id="journal-entry"></p>
+  </body>
+</html>
